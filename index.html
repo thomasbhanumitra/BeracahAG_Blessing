@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Church Songs Lyrics</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #1976d2;
+      color: white;
+      padding: 15px;
+      font-size: 22px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .buttons button:hover {
+      background: #0d47a1;
+    }
+
+    .lyrics {
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .song-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body onload="showLang('kn')">
+
+<header>
+  Church Songs Lyrics
+</header>
+
+<div class="container">
+
+  <div class="song-title">
+    167. Ninna Divya Sannidhige
+  </div>
+
+  <!-- Language Buttons -->
+  <div class="buttons">
+    <button onclick="showLang('kn')">Kannada</button>
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('ta')">Tamil</button>
+  </div>
+
+  <!-- Kannada -->
+  <div class="lyrics" id="kn">
+    <p>ನಿನ್ನ ದಿವ್ಯ ಸನ್ನಿಧಿಗೆ ನಾನು ಬರುವೆ ಸ್ವಾಮಿ<br/>
+    ನಿನ್ನ ಮಗನಾಗಿ ನಾನು ಬಾಳುವೆ</p>
+
+    <p>1. ನಿನ್ನ ಸ್ತುತಿ ಸ್ತೋತ್ರವ ನಾನು ಹೇಳುವೆ<br/>
+    ನಿನ್ನ ಪಾದಕ್ಕೆ ನಾ ಶರಣಾಗುವೆ</p>
+
+    <p>2. ನಿನ್ನ ಮುಖ ದರುಶನ ಸಾಕೆನಗೆ<br/>
+    ಸರ್ವಲೋಕ ಐಶ್ಚರ್ಯ ನೀ ನನಗೆ</p>
+
+    <p>3. ಸತ್ಯ ವಾಕ್ಯವೆ ನೀ ನನ್ ಉಸಿರು<br/>
+    ಜಗ ಜ್ಯೋತಿಯೇ ಸ್ವಾಮಿ ನನ್ ಯೇಸುವೇ</p>
+  </div>
+
+  <!-- English -->
+  <div class="lyrics" id="en">
+    <p>Ninna divya sannidhige naanu baruve svaami<br/>
+    ninna maganaagi naanu baaluve</p>
+
+    <p>1. Ninna stuti stotrava naanu heluve<br/>
+    ninna paadakke na sharanaaguve</p>
+
+    <p>2. Ninna mukha darushana saakenage<br/>
+    sarvalooka aishcarya nee nanage</p>
+
+    <p>3. Satya vaakyave nee nan usiru<br/>
+    jaga jyootiye svaami nan Yesuve</p>
+  </div>
+
+  <!-- Tamil -->
+  <div class="lyrics" id="ta">
+    <p>நின்ன திவ்ய சன்னிதிகே நான் வருவேன் சுவாமி<br/>
+    நின்ன மகனாகி நான் வாழுவேன்</p>
+
+    <p>1. நின்ன ஸ்துதி ஸ்தோத்திரவ நான் சொல்லுவேன்<br/>
+    நின்ன பாதத்திற்கு நான் சரணாகுவேன்</p>
+
+    <p>2. நின்ன முக தரிசனம் எனக்கு போதும்<br/>
+    உலகத்தின் ஐஸ்வர்யம் நீயே எனக்கு</p>
+
+    <p>3. சத்திய வார்த்தையே என் சுவாசம்<br/>
+    உலக ஜோதி என் இயேசுவே</p>
+  </div>
+
+</div>
+
+<script>
+function showLang(lang) {
+  document.getElementById("kn").style.display = "none";
+  document.getElementById("en").style.display = "none";
+  document.getElementById("ta").style.display = "none";
+
+  document.getElementById(lang).style.display = "block";
+}
+</script>
+
+</body>
+</html>
